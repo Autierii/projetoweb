@@ -1,0 +1,146 @@
+nav {
+    background-color: rgb(119, 172, 119);
+    display: flex;
+    justify-content: space-between;
+    padding-left: 2vh;
+    padding-right: 2vh;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 20vh;
+    width: 98%;
+    align-items: center;
+    grid-template-columns: minmax();
+    grid-template-areas:
+        "header header"
+        "meio meio2"
+        "meiob meiob"
+        "footer footer";
+    grid-area: header;
+    margin-bottom: 5vh;
+    text-decoration: none;
+    margin-bottom: 10vh;
+}
+
+.nav-container{
+    padding-right: 4vh;
+}
+
+.barra ul li {
+    display: flex;
+    margin-top: 1vh;
+    font-size: 3vh;
+}
+
+
+
+.barra ul li :hover {
+    background-color: darkgreen;
+    color: aliceblue;
+}
+
+
+
+.barra ul li a {
+    text-decoration: none;
+    background-color: grey;
+    color: white;
+    border-radius: 2.5vh;
+    padding: 10px;
+}
+
+
+h1 a {
+    font-size: 5vh;
+    text-decoration: none;
+    font-style: italic;
+    color: black;
+}
+
+
+
+h1 a:hover {
+    cursor: pointer;
+}
+
+.itens ul li {
+    display: inline-block;
+    margin: 2vh;
+}
+
+
+h4 {
+    text-align: center;
+    font-size: 8vh;
+}
+
+@media screen and (max-width: 768px) {
+
+    nav {
+        background-color: rgb(119, 172, 119);
+        display: flex;
+        justify-content: space-between;
+        padding-left: 2vh;
+        padding-right: 2vh;
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        height: 20vh;
+        width: 98%;
+        align-items: center;
+        grid-template-columns: minmax();
+        grid-template-areas:
+            "header header"
+            "meio meio2"
+            "meiob meiob"
+            "footer footer";
+        grid-area: header;
+        margin-bottom: 5vh;
+        text-decoration: none;
+    }
+
+    .barra ul li a {
+        text-decoration: none;
+        background-color: grey;
+        color: white;
+        border-radius: 2vh;
+        padding: 1vh;
+        font-size: 1.5vh;
+    }
+
+    .textosol {
+        padding: 2vh;
+        margin: 2vh;
+        border-radius: 10%;
+        font-size: 2vh;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .textocausas {
+        padding: 2vh;
+        margin: 2vh;
+        border-radius: 10%;
+    }
+
+    .imgscontext {
+        display: flex;
+        font-size: 2vh;
+        margin: 1vh;
+        text-align: center;
+        
+    }
+    img{
+        width: 10vh;
+        height: 40vh;
+    }
+
+    h4{
+        font-size: 5vh;
+    }
+}
